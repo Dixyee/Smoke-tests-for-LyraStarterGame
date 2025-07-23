@@ -1,0 +1,48 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="coverlet.collector" Version="6.0.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.8.0" />
+    <PackageReference Include="NUnit" Version="3.14.0" />
+    <PackageReference Include="NUnit.Analyzers" Version="3.9.0" />
+    <PackageReference Include="NUnit3TestAdapter" Version="4.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="gdio.agent_communications">
+      <HintPath>..\..\..\gdio_apiUE5\gdio.agent_communications.dll</HintPath>
+    </Reference>
+    <Reference Include="gdio.common.objects">
+      <HintPath>..\..\..\gdio_apiUE5\gdio.common.objects.dll</HintPath>
+    </Reference>
+    <Reference Include="gdio.plugin.serializer">
+      <HintPath>..\..\..\gdio_apiUE5\gdio.plugin.serializer.dll</HintPath>
+    </Reference>
+    <Reference Include="gdio.protocol.objects">
+      <HintPath>..\..\..\gdio_apiUE5\gdio.protocol.objects.dll</HintPath>
+    </Reference>
+    <Reference Include="gdio.unreal_api">
+      <HintPath>..\..\..\gdio_apiUE5\gdio.unreal_api.dll</HintPath>
+    </Reference>
+    <Reference Include="MessagePack">
+      <HintPath>..\..\..\gdio_apiUE5\MessagePack.dll</HintPath>
+    </Reference>
+    <Reference Include="MessagePack.Annotations">
+      <HintPath>..\..\..\gdio_apiUE5\MessagePack.Annotations.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Using Include="NUnit.Framework" />
+  </ItemGroup>
+
+</Project>
